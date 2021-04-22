@@ -1,1 +1,1 @@
-# react-example
+# react-playground
