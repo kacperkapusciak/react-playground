@@ -22,6 +22,10 @@ const examples = {
     title: 'Komponenty',
     body: <Components />,
   },
+  state: {
+    title: 'Stan',
+    body: <State />,
+  },
   conditional_rendering: {
     title: 'Renderowanie warunkowe',
     body: <ConditionalRendering />,
@@ -29,10 +33,6 @@ const examples = {
   lists: {
     title: 'Listy i klucze',
     body: <Lists />,
-  },
-  state: {
-    title: 'Stan',
-    body: <State />,
   },
   context: {
     title: 'Kontekst',
