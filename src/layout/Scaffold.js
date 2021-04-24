@@ -23,6 +23,8 @@ const styles = {
   },
   main: {
     gridArea: 'main',
+    overflowY: 'auto',
+    maxHeight: 'calc(100vh - 70px)',
   },
 };
 
