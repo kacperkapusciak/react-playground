@@ -64,7 +64,9 @@ function App() {
       </nav>
       <section style={styles.colors}>
         {colors.map(({ title, color }) => (
-          <Circle color={color}>{title}</Circle>
+          <Circle key={title} color={color}>
+            {title}
+          </Circle>
         ))}
       </section>
     </section>
