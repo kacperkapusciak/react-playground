@@ -15,7 +15,6 @@ function App() {
 
   useEffect(() => {
     getData();
-    // return () => console.log('clean up!');
   }, []);
 
   return (

@@ -10,7 +10,7 @@ import ConditionalRendering from './examples/ConditionalRendering';
 import Lists from './examples/Lists';
 import State from './examples/State';
 import Context from './examples/Context';
-import LifeCycle from './examples/LifeCycle';
+import SideEffects from './examples/SideEffects';
 
 // type: 'rendering' | 'state_management' | 'life_cycle'
 const examples = {
@@ -39,8 +39,8 @@ const examples = {
     body: <Context />,
   },
   life_cycle: {
-    title: 'Cykl życia komponentu',
-    body: <LifeCycle />,
+    title: 'Efekty uboczne',
+    body: <SideEffects />,
   },
 };
 
