@@ -10,12 +10,24 @@ function Title(props) {
 
 function Car(props) {
   return (
-    <div style={{ color: props.color, border: `1px solid ${props.color}`, padding: 8, margin: 8 }}>
-      <h5>marka: {props.brand}</h5>
-      <h5>model: {props.model}</h5>
+    <div style={{ ...carStyle, backgroundColor: props.color }}>
+      <p>marka: {props.brand}</p>
+      <p>model: {props.model}</p>
     </div>
   );
 }
+
+const carStyle = {
+  margin: 8,
+  width: 170,
+  color: 'white',
+  border: '1px solid transparent',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  borderRadius: 10,
+};
 
 // -----
 
@@ -44,9 +56,9 @@ function App() {
   return (
     <section>
       <Title value="Przykładowy tytuł" />
-      <Car brand="Tesla" model="X" color="red" />
-      <Car brand="Ford" model="Focus" color="blue" />
-      <Car brand="Fiat" model="Tipo" color="gray" />
+      <Car brand="Tesla" model="X" color="tomato" />
+      <Car brand="Ford" model="Focus" color="dodgerblue" />
+      <Car brand="Fiat" model="Tipo" color="purple" />
       <Button onClick={() => alert('Wciśnięto przycisk!')}>Przycisk</Button>
     </section>
   );
