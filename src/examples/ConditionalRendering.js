@@ -27,7 +27,7 @@ function App() {
   const [shape, setShape] = useState('circle');
 
   const handleChangeShape = () => {
-    setShape((prevShape) => setShape(prevShape === 'circle' ? 'square' : 'circle'));
+    setShape((prevShape) => (prevShape === 'circle' ? 'square' : 'circle'));
   };
 
   return (
@@ -35,7 +35,7 @@ function App() {
       <button style={styles.button} onClick={handleChangeShape}>
         Zmień figurę
       </button>
-      {/* conditional rendering */}
+      {/* renderowanie warunkowe */}
       {shape === 'circle' ? <Circle /> : <Square />}
     </div>
   );
